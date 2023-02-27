@@ -1,12 +1,14 @@
 import zad1.Reverser;
 import zad2.Shopping;
+import zad3.TemperatureSaver;
 
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         //zad1();
-        zad2();
+        //zad2();
+        zad3();
 
     }
 
@@ -38,6 +40,23 @@ public class Main {
         }while (!stop);
         System.out.println("After the shopping");
         System.out.println(sh.showShoppingList());
+    }
+
+    public static void zad3(){
+        System.out.println("--------------3------------------");
+        TemperatureSaver sav = new TemperatureSaver(10);
+        Scanner sc = new Scanner(System.in);
+        do{
+            System.out.println("Insert measured temperature: ");
+            if(sc.hasNextInt()){
+                sav.saveValue(sc.nextInt());
+            }else{
+                sc.next();
+                break;
+            }
+            System.out.println("Average"+ sav.computeAverage());
+            System.out.println("All "+ sav.showAll());
+        }while(true);
     }
 }
 
