@@ -1,5 +1,6 @@
 public class Program {
     public static void main(String[] args) {
-        Solution.run();
+
+        Solution2.run("morsztyn.txt");
     }
 }
