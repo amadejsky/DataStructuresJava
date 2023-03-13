@@ -1,4 +1,7 @@
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.util.NoSuchElementException;
+import java.util.Scanner;
 
 public class Addition {
     private TStack<Integer> stA;
@@ -58,6 +61,33 @@ public class Addition {
                 throw new NoSuchElementException();
             }
         }
+
+    public String ExecuteForFile(String filename) throws FileNotFoundException {
+        FileInputStream fin = new FileInputStream(filename);
+        Scanner sc = new Scanner(fin);
+
+        StringBuilder sb = new StringBuilder();
+
+        try {
+            while (sc.hasNextLine()) {
+                String line = sc.nextLine();
+                String[] parts = line.split(" ");
+                if (parts.length != 2) {
+                    throw new IllegalArgumentException("Invalid input file format");
+                }
+                String A = parts[0];
+                String B = parts[1];
+                String result = Execute(A, B);
+                sb.append(result);
+            }
+        } catch (NoSuchElementException | IllegalStateException e) {
+            throw new IllegalArgumentException("Invalid input file format");
+        }
+
+        sc.close();
+
+        return sb.toString();
+    }
     }
 
 
