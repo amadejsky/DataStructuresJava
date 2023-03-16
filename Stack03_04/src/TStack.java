@@ -74,7 +74,7 @@ public class TStack<E> implements InterStack<E> {
                 tmp = null;
                 //tylko jeden elemrnt jest na stosie
             } else {
-                while (tmp.getPrev().getPrev() != null) {
+                while (tmp.getPrev().getPrev()!= null) {
                     tmp = tmp.getPrev(); //jes twiecej ni z jeden element
                 }
                 tmp.setPrev(null);//pomijany ten na dole i sutawiamy na null

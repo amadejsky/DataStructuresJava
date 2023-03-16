@@ -49,10 +49,11 @@ import java.util.Scanner;
             st.push(-1);
             System.out.println("stos niepusty szukany");
 
-
+            st.deleteBottom();
             while(!st.isEmpty()){
                 System.out.println(st.pop());
             }
+
         }
 
 }

@@ -1,5 +1,6 @@
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.NoSuchElementException;
 import java.util.Scanner;
 
@@ -25,6 +26,12 @@ public class Addition {
                     throw new IllegalArgumentException();
                 }
             }
+            //log
+//            TStack<Integer> ref = stack;
+//            while(!ref.isEmpty()){
+//                System.out.println(ref.pop());
+//            }
+            //
             return true;
         }
     }
@@ -62,31 +69,25 @@ public class Addition {
             }
         }
 
-    public String ExecuteForFile(String filename) throws FileNotFoundException {
-        FileInputStream fin = new FileInputStream(filename);
-        Scanner sc = new Scanner(fin);
-
-        StringBuilder sb = new StringBuilder();
-
-        try {
-            while (sc.hasNextLine()) {
-                String line = sc.nextLine();
-                String[] parts = line.split(" ");
-                if (parts.length != 2) {
-                    throw new IllegalArgumentException("Invalid input file format");
-                }
-                String A = parts[0];
-                String B = parts[1];
-                String result = Execute(A, B);
-                sb.append(result);
+    public String ExecuteForFile(String filename){
+        try(FileInputStream fin = new FileInputStream(filename)){
+            Scanner sc = new Scanner(fin);
+            String A = sc.nextLine();
+            while(sc.hasNext()){
+                A = Execute(A,sc.nextLine());
             }
-        } catch (NoSuchElementException | IllegalStateException e) {
-            throw new IllegalArgumentException("Invalid input file format");
+            return  A;
+        }catch(FileNotFoundException e){
+            e.printStackTrace();
+            System.out.println(String.format("File not found %s. %s",filename,e.toString()));
+        }catch(NoSuchElementException e){
+            e.printStackTrace();
+            System.out.println(String.format("No Data"));
+        }catch(IOException e){
+            e.printStackTrace();
+            System.out.println(String.format("Error %s",e.toString()));
         }
-
-        sc.close();
-
-        return sb.toString();
+        return " ";
     }
     }
 

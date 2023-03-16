@@ -33,7 +33,7 @@ public class Exercise01Lab3 {
             }
 
         }else if(part.equals("c")){
-          String result = add.ExecuteForFile("./src/data/numbers.txt");
+          String result = add.ExecuteForFile("D:\\CodeProjects\\DataStructures\\DataStructuresJava\\Stack03_04\\src\\numbers.txt");
             System.out.println(
                     String.format("Wynik: %n%s",result)
             );
