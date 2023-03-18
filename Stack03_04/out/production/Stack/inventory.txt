@@ -1,0 +1,9 @@
+bf.bf
+c.c
+cplusplus.cpp
+csharp.cs
+javascript.html
+php.php
+prolog.pl
+wyrazenia.txt
+wyrazenia2.txt

@@ -46,8 +46,8 @@ public class List {
         try(FileInputStream fin = new FileInputStream(filename)){
             Scanner sc = new Scanner(fin);
             while(sc.hasNext()){
-                String line = sc.nextLine();
-                stackList.push(line);
+                //String line = sc.nextLine();
+                stackList.push(sc.nextLine());
             }
         }catch(FileNotFoundException e){
             e.printStackTrace();

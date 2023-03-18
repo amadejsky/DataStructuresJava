@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="860f6282-da1a-4f2e-bdec-6a5278d2ca0b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/out/production/Stack/List.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Stack/List.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Stack/TStack.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Stack/TStack.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/List.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/List.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TStack.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2MXnJsPq5jqtVgAqBM6mdWXyxE0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/CodeProjects/DataStructures/DataStructuresJava/ArrayStack03_17",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\CodeProjects\DataStructures\DataStructuresJava\Stack03_04\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.BracketsChecker">
+    <configuration name="BracketsChecker" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BracketsChecker" />
+      <module name="Stack" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CallExercise" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CallExercise" />
+      <module name="Stack" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Landing" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Landing" />
+      <module name="Stack" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Program" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Program" />
+      <module name="Stack" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="experimentalBracket" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="experimentalBracket" />
+      <module name="Stack" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.BracketsChecker" />
+        <item itemvalue="Application.experimentalBracket" />
+        <item itemvalue="Application.Landing" />
+        <item itemvalue="Application.CallExercise" />
+        <item itemvalue="Application.Program" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="860f6282-da1a-4f2e-bdec-6a5278d2ca0b" name="Changes" comment="" />
+      <created>1677922726997</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1677922726997</updated>
+      <workItem from="1677922728169" duration="1457000" />
+      <workItem from="1678550365452" duration="1298000" />
+      <workItem from="1678632877582" duration="1040000" />
+      <workItem from="1678717156816" duration="3083000" />
+      <workItem from="1678726541741" duration="4828000" />
+      <workItem from="1678739942795" duration="981000" />
+      <workItem from="1678740979025" duration="25000" />
+      <workItem from="1678796744746" duration="2686000" />
+      <workItem from="1678799712521" duration="319000" />
+      <workItem from="1678800135748" duration="605000" />
+      <workItem from="1678800877837" duration="20000" />
+      <workItem from="1678800915693" duration="10000" />
+      <workItem from="1678801587260" duration="144000" />
+      <workItem from="1678813779865" duration="3063000" />
+      <workItem from="1678824804317" duration="1035000" />
+      <workItem from="1678828271441" duration="105000" />
+      <workItem from="1678871895348" duration="1211000" />
+      <workItem from="1678885230131" duration="2462000" />
+      <workItem from="1678906896613" duration="42000" />
+      <workItem from="1678906953627" duration="7000" />
+      <workItem from="1678913245574" duration="25000" />
+      <workItem from="1678913310384" duration="2251000" />
+      <workItem from="1678969449571" duration="553000" />
+      <workItem from="1678970024385" duration="8341000" />
+      <workItem from="1678995849971" duration="808000" />
+      <workItem from="1679043054877" duration="2664000" />
+      <workItem from="1679130845145" duration="4565000" />
+      <workItem from="1679151404350" duration="1274000" />
+      <workItem from="1679154988243" duration="135000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

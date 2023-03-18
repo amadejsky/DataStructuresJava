@@ -18,7 +18,7 @@ public class TStack<E> implements InterStack<E> {
 
     @Override
     public E top() {
-        if( top == null ){
+        if (top == null) {
             throw new EmptyStackException();
         } else {
             return top.getData();
@@ -27,7 +27,7 @@ public class TStack<E> implements InterStack<E> {
 
     @Override
     public E pop() {
-        if( top == null ){
+        if (top == null) {
             throw new EmptyStackException();
         } else {
             E dataOut = top.getData();
@@ -38,7 +38,7 @@ public class TStack<E> implements InterStack<E> {
 
     @Override
     public int size() {
-        if( top == null ){
+        if (top == null) {
             return 0;
         } else {
             TStackNode<E> refNode = top;
@@ -54,9 +54,9 @@ public class TStack<E> implements InterStack<E> {
     @Override
     public int deepLevel(E item) {
         TStackNode<E> tmp = top;
-        int level =0;
-        while(tmp!=null){
-            if(item==tmp.getData()){
+        int level = 0;
+        while (tmp != null) {
+            if (item == tmp.getData()) {
                 return level;
             }
             tmp = tmp.getPrev();
@@ -64,6 +64,7 @@ public class TStack<E> implements InterStack<E> {
         }
         return -1;
     }
+
 
     public void deleteBottom() {
         if (top == null) {
@@ -74,7 +75,7 @@ public class TStack<E> implements InterStack<E> {
                 tmp = null;
                 //tylko jeden elemrnt jest na stosie
             } else {
-                while (tmp.getPrev().getPrev()!= null) {
+                while (tmp.getPrev().getPrev() != null) {
                     tmp = tmp.getPrev(); //jes twiecej ni z jeden element
                 }
                 tmp.setPrev(null);//pomijany ten na dole i sutawiamy na null
@@ -82,13 +83,58 @@ public class TStack<E> implements InterStack<E> {
         }
     }
 
-        @Override
-        public void push(E item) {
-            if (top == null) {
-                top = new TStackNode<>(item, null);
+    @Override
+    public void push(E item) {
+        if (top == null) {
+            top = new TStackNode<>(item, null);
+        } else {
+            TStackNode<E> refNode = new TStackNode<>(item, top);
+            top = refNode;
+        }
+    }
+
+
+    public void deletBottom() {
+        if (top == null) {
+            throw new EmptyStackException();
+        } else {
+            TStackNode<E> tmp = top;
+            if (tmp.getPrev() == null) {
+                tmp.setPrev(null);
             } else {
-                TStackNode<E> refNode = new TStackNode<>(item, top);
-                top = refNode;
+                while (tmp.getPrev().getPrev() != null) {
+                    tmp.getPrev();
+                }
+                tmp.setPrev(null);
             }
         }
     }
+
+    public int deep(E item) {
+        if (top == null) {
+            throw new EmptyStackException();
+        } else {
+
+            int count = 0;
+            while (top != null) {
+                if (item == top.getData()) {
+                    return count;
+                }
+                top.getPrev();
+                count++;
+            }
+        }
+        return -1;
+    }
+
+    public void psh(E item){
+        if(top==null){
+            throw new EmptyStackException();
+        }else{
+            TStackNode<E> refNode = new TStackNode<>(item,top);
+            top = refNode;
+        }
+    }
+
+
+}
