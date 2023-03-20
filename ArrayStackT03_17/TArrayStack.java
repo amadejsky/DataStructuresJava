@@ -2,6 +2,7 @@ package lib;
 
 import inter.InterStack;
 
+import java.sql.SQLOutput;
 import java.util.EmptyStackException;
 
 public class TArrayStack<E> implements InterStack<E> {
@@ -75,8 +76,14 @@ public class TArrayStack<E> implements InterStack<E> {
 
     @Override
     public int deepLevel(E item) {
-        return 0;
-        //TODO int deepLevel(item)sprawdzającą ja głęboko na stosie jest dostępny szukany elementitem.
+            int level=0;
+        for(int i = 0;i<memoryStack.length;i++){
+            if(memoryStack[i].equals(item)){
+                return level;
+            }
+        }
+        return -1;
+        //int deepLevel(item)sprawdzającą ja głęboko na stosie jest dostępny szukany elementitem.
     }
 
     public boolean isFull(){
@@ -84,7 +91,12 @@ public class TArrayStack<E> implements InterStack<E> {
     }
 
     public String printStack(){
-            //todo String printStack()pozwalającą na wyświetlenie stosu w postacikolejnych elementów tablicy. Przykładowo jeżeli do stosu przekażemy napisy: „ene”, „due”, „rike”, „fake”, to metoda produkuje łańcuch znaków postaci:Tab[3]=fake <-topTab[2]=rikeTab[1]=dueTab[0]=ene
+        //String printStack()pozwalającą na wyświetlenie stosu w postacikolejnych elementów tablicy. Przykładowo jeżeli do stosu przekażemy napisy: „ene”, „due”, „rike”, „fake”, to metoda produkuje łańcuch znaków postaci:Tab[3]=fake <-topTab[2]=rikeTab[1]=dueTab[0]=ene
+            for(int i = memoryStack.length-1;i>=0;i--){
+                System.out.println("Tab"+"["+i+"]"+memoryStack[i]+"\n");
+            }
+        System.out.println("<---top");
+
         return "";
     }
 }
