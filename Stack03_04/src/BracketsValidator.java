@@ -15,13 +15,18 @@ public class BracketsValidator {
             Scanner sc = new Scanner(fin);
             while(sc.hasNext()){
                 String next = sc.next();
-                dataStack.push(next);
+                for(int i =0;i<next.length();i++){
+                    char c = next.charAt(i);
+                    dataStack.push(String.valueOf(c));
+                }
             }
         }catch(Exception e){
             return false;
         }
         return true;
     }
+
+
 
     public boolean Validate(String filename){
         boolean ok = readText(filename);

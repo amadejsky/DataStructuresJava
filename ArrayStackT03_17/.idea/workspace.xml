@@ -7,6 +7,8 @@
     <list default="true" id="9faf0a0d-a12e-4f5c-b70a-e69cf494f105" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TArrayStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/TArrayStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Stack03_04/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Stack03_04/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Stack03_04/src/BracketsValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Stack03_04/src/BracketsValidator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +47,8 @@
       <workItem from="1679161775485" duration="677000" />
       <workItem from="1679260937447" duration="71000" />
       <workItem from="1679302720319" duration="2050000" />
-      <workItem from="1679318791147" duration="310000" />
+      <workItem from="1679318791147" duration="518000" />
+      <workItem from="1679319479619" duration="67000" />
     </task>
     <servers />
   </component>

@@ -76,10 +76,10 @@ public class TArrayStack<E> implements InterStack<E> {
 
     @Override
     public int deepLevel(E item) {
-            int level=0;
         for(int i = 0;i<memoryStack.length;i++){
             if(memoryStack[i].equals(item)){
-                return level;
+                System.out.println("Level of element in the stack is: ");
+                return i;
             }
         }
         return -1;
