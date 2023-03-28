@@ -53,6 +53,4 @@ public class BracketsValidator {
        return false;
     }
 
-
-
 }

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="804a448a-4dd0-4b70-84e1-c5052904a381" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../ArrayStackT03_17/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ArrayStackT03_17/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ArrayStackT03_17/TArrayStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ArrayStackT03_17/TArrayStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Stack03_04/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Stack03_04/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Stack03_04/out/production/Stack/BracketsValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Stack03_04/out/production/Stack/BracketsValidator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Stack03_04/src/BracketsValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Stack03_04/src/BracketsValidator.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="2NQFOq4BlQ0HEMMw3n20hhUm50g" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/CodeProjects/DataStructures/DataStructuresJava/TArrayStack&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="804a448a-4dd0-4b70-84e1-c5052904a381" name="Changes" comment="" />
+      <created>1679588369735</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1679588369735</updated>
+      <workItem from="1679588370722" duration="147000" />
+      <workItem from="1679594560742" duration="29000" />
+      <workItem from="1679937337972" duration="1203000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

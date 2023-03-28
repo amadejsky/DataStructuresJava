@@ -1,4 +1,4 @@
-package lib;
+package inter;
 
 import inter.InterStack;
 
@@ -11,8 +11,8 @@ public class TArrayStack<E> implements InterStack<E> {
     private int size;
     private E[] memoryStack;
 
-        public TArrayStack(int maxSize) {
-        if( maxSize < 1 )
+    public TArrayStack(int maxSize) {
+        if (maxSize < 1)
             this.maxSize = 16;
         else
             this.maxSize = maxSize;
@@ -28,7 +28,7 @@ public class TArrayStack<E> implements InterStack<E> {
 
     @Override
     public E top() {
-        if( size == 0 ) {
+        if (size == 0) {
             throw new EmptyStackException();
         } else {
             return memoryStack[end];
@@ -49,9 +49,9 @@ public class TArrayStack<E> implements InterStack<E> {
 
     @Override
     public void push(E item) {
-        if( size == maxSize ) {
+        if (size == maxSize) {
             throw new StackOverflowError();
-        } else if ( size == 0 ) {
+        } else if (size == 0) {
             memoryStack[end] = item;
             size++;
         } else {
@@ -61,12 +61,12 @@ public class TArrayStack<E> implements InterStack<E> {
         }
     }
 
-    public void extendMemory(){
-            int newMaxSize = (int) Math.round(maxSize*1.5);
-            E[] newTab = (E[]) new Object[newMaxSize];
-            System.arraycopy(this.memoryStack,0,newTab,0,this.size);
-            this.memoryStack=newTab;
-            this.maxSize=newMaxSize;
+    public void extendMemory() {
+        int newMaxSize = (int) Math.round(maxSize * 1.5);
+        E[] newTab = (E[]) new Object[newMaxSize];
+        System.arraycopy(this.memoryStack, 0, newTab, 0, this.size);
+        this.memoryStack = newTab;
+        this.maxSize = newMaxSize;
     }
 
     @Override
@@ -76,8 +76,8 @@ public class TArrayStack<E> implements InterStack<E> {
 
     @Override
     public int deepLevel(E item) {
-        for(int i = 0;i<memoryStack.length;i++){
-            if(memoryStack[i].equals(item)){
+        for (int i = 0; i < memoryStack.length; i++) {
+            if (memoryStack[i].equals(item)) {
                 System.out.println("Level of element in the stack is: ");
                 return i;
             }
@@ -86,17 +86,44 @@ public class TArrayStack<E> implements InterStack<E> {
         //int deepLevel(item)sprawdzającą ja głęboko na stosie jest dostępny szukany elementitem.
     }
 
-    public boolean isFull(){
+    public boolean isFull() {
         return size == maxSize;
     }
 
-    public String printStack(){
+    public String printStack() {
         //String printStack()pozwalającą na wyświetlenie stosu w postacikolejnych elementów tablicy. Przykładowo jeżeli do stosu przekażemy napisy: „ene”, „due”, „rike”, „fake”, to metoda produkuje łańcuch znaków postaci:Tab[3]=fake <-topTab[2]=rikeTab[1]=dueTab[0]=ene
-            for(int i = memoryStack.length-1;i>=0;i--){
-                System.out.println("Tab"+"["+i+"]"+memoryStack[i]+"\n");
+        StringBuilder sb = new StringBuilder();
+        if (this.size == 0) {
+            return "[EMPTY]";
+        } else {
+            for (int i = memoryStack.length - 1; i >= 0; i--) {
+                sb.append("Tab" + "[" + i + "] " + memoryStack[i] + "\n");
             }
-        System.out.println("<---top");
+            sb.append("<---top");
+        }
 
-        return "";
+
+        return sb.toString();
     }
 }
+
+
+//    public String printStack() {
+//        if (this.size == 0) {
+//            return "[]";
+//        } else {
+//            StringBuilder sb = new StringBuilder();
+//
+//            for(int i = 0; i < this.size; ++i) {
+//                sb.append(String.format("[ %s ]", this.memoryStack[this.size - 1 - i].toString()));
+//                if (i == 0) {
+//                    sb.append(" <-- ");
+//                }
+//
+//                sb.append("\n");
+//            }
+//
+//            return sb.toString();
+//        }
+//    }
+
