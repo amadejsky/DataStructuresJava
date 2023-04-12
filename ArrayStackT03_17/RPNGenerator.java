@@ -27,14 +27,10 @@ public class RPNGenerator {
                     stack.push(sign);
                 } else if (sign == ')') {
                     removeUntillBracker();
-                    System.out.println("Stack contents: " + stack.toString()); // <-- add this line
-                    System.out.println("StringBuilder contents: " + str.toString()); // <-- add this line
                 } else if (numberOrVariable(sign)) {
                     str.append(word).append(" ");
                 } else if (operation(sign)) {
                     pushOperationToStack(sign);
-                    System.out.println("Stack contents: " + stack.toString()); // <-- add this line
-                    System.out.println("StringBuilder contents: " + str.toString()); // <-- add this line
                 } else {
                     throw new DataFormatException();
                 }

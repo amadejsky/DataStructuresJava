@@ -96,7 +96,7 @@ public class TArrayStack<E> implements InterStack<E> {
         if (this.size == 0) {
             return "[EMPTY]";
         } else {
-            for (int i = memoryStack.length - 1; i >= 0; i--) {
+            for (int i = size; i >= 0; i--) {
                 sb.append("Tab" + "[" + i + "] " + memoryStack[i] + "\n");
             }
             sb.append("<---top");

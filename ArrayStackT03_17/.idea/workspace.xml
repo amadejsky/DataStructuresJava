@@ -6,10 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="9faf0a0d-a12e-4f5c-b70a-e69cf494f105" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RPNGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/RPNGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TArrayStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/TArrayStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Stack03_04/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Stack03_04/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Stack03_04/out/production/Stack/BracketsValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Stack03_04/out/production/Stack/BracketsValidator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Stack03_04/src/BracketsValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Stack03_04/src/BracketsValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ForwardList/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ForwardList/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,21 +110,20 @@
       <workItem from="1679941036152" duration="6000" />
       <workItem from="1679941051987" duration="4162000" />
       <workItem from="1679945837390" duration="1638000" />
+      <workItem from="1680092454914" duration="1119000" />
+      <workItem from="1680093642002" duration="844000" />
+      <workItem from="1680117485205" duration="461000" />
+      <workItem from="1680118012622" duration="66000" />
+      <workItem from="1680123571476" duration="86000" />
+      <workItem from="1680171352982" duration="7931000" />
+      <workItem from="1680526775473" duration="41000" />
+      <workItem from="1680685849646" duration="916000" />
+      <workItem from="1680769764840" duration="1402000" />
+      <workItem from="1681200039913" duration="61000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/RPNGenerator.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
