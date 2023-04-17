@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9faf0a0d-a12e-4f5c-b70a-e69cf494f105" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../list/src (1)/src/str/DataInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../list/src (1)/src/str/Exercise04.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../list/src (1)/src/str/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RPNGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/RPNGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TArrayStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/TArrayStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ForwardList/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ForwardList/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ArrayStackT03_17/inter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArrayStackT03_17/inter/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ArrayStackT03_17/inter/RPNGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArrayStackT03_17/inter/RPNGenerator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ArrayStackT03_17/inter/TArrayStack.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArrayStackT03_17/inter/TArrayStack.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../list/src (1)/src/str/Exercise.java" beforeDir="false" afterPath="$PROJECT_DIR$/../list/src (1)/src/str/Exercise.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +56,7 @@
       <recent name="D:\CodeProjects\DataStructures\DataStructuresJava\ArrayStackT03_17" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Exercise4">
+  <component name="RunManager" selected="Application.NbpApi">
     <configuration name="Excercise04" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="inter.version2.Excercise04" />
       <module name="ArrayStackT03_17" />
@@ -79,8 +83,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="NbpApi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="inter.NbpApi" />
+      <module name="ArrayStackT03_17" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="inter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.NbpApi" />
         <item itemvalue="Application.Exercise4" />
         <item itemvalue="Application.Excercise04" />
       </list>
@@ -120,6 +138,10 @@
       <workItem from="1680685849646" duration="916000" />
       <workItem from="1680769764840" duration="1402000" />
       <workItem from="1681200039913" duration="61000" />
+      <workItem from="1681281180808" duration="1451000" />
+      <workItem from="1681283117393" duration="1669000" />
+      <workItem from="1681474149394" duration="55000" />
+      <workItem from="1681737356270" duration="7000" />
     </task>
     <servers />
   </component>

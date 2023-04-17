@@ -28,5 +28,17 @@ public class Exercise {
         }
         System.out.println(listInt.size());
 
+        long start = System.currentTimeMillis();
+        long a=0;
+//        for(int j=0;j<10000;j++){
+//            a+=1;
+//        }
+        TForwardList<Integer> list2 = new TForwardList<>();
+        for(int j=0;j<10000;j++){
+            list2.add(j);
+        }
+        long stop = System.currentTimeMillis();
+        System.out.println(String.format("Czas wykonania:%d ms",stop-start));
+
     }
 }

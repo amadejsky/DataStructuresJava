@@ -4,22 +4,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2aaf864c-356f-49a6-a289-294c4443a060" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../list/src (1)/src/str/DataInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../list/src (1)/src/str/Exercise04.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../list/src (1)/src/str/Main.java" afterDir="false" />
+    <list default="true" id="e3555bdc-f219-4bf1-835f-cc1ca36365bf" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Que/QUE/src/Tasks/Zad1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src (1)/src/str/DataInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src (1)/src/str/Exercise04.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src (1)/src/str/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ArrayStackT03_17/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ArrayStackT03_17/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ArrayStackT03_17/out/production/ArrayStackT03_17/inter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ArrayStackT03_17/out/production/ArrayStackT03_17/inter/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ArrayStackT03_17/out/production/ArrayStackT03_17/inter/RPNGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ArrayStackT03_17/out/production/ArrayStackT03_17/inter/RPNGenerator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ArrayStackT03_17/out/production/ArrayStackT03_17/inter/TArrayStack.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ArrayStackT03_17/out/production/ArrayStackT03_17/inter/TArrayStack.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../list/src (1)/src/str/Exercise.java" beforeDir="false" afterPath="$PROJECT_DIR$/../list/src (1)/src/str/Exercise.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src (1)/src/str/Exercise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src (1)/src/str/Exercise.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectId" id="2NQjL6dJ7YLGNaJCzqHmBeI8GJo" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2NuvWlb3xApnv7BNebXeOG06SQJ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -29,7 +43,6 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/CodeProjects/DataStructures/DataStructuresJava/ForwardList&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -40,18 +53,19 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2aaf864c-356f-49a6-a289-294c4443a060" name="Changes" comment="" />
-      <created>1679603141129</created>
+      <changelist id="e3555bdc-f219-4bf1-835f-cc1ca36365bf" name="Changes" comment="" />
+      <created>1680526816761</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1679603141129</updated>
-      <workItem from="1679603142204" duration="1375000" />
-      <workItem from="1679604996553" duration="102000" />
-      <workItem from="1679843636764" duration="18000" />
-      <workItem from="1679941044209" duration="6000" />
-      <workItem from="1680117956427" duration="54000" />
-      <workItem from="1681201594703" duration="15000" />
-      <workItem from="1681737365395" duration="32000" />
+      <updated>1680526816761</updated>
+      <workItem from="1680526818209" duration="737000" />
+      <workItem from="1680604215375" duration="221000" />
+      <workItem from="1681200103932" duration="871000" />
+      <workItem from="1681201611733" duration="4121000" />
+      <workItem from="1681238158481" duration="5000" />
+      <workItem from="1681281163919" duration="15000" />
+      <workItem from="1681474207652" duration="2701000" />
+      <workItem from="1681479430204" duration="43000" />
     </task>
     <servers />
   </component>
