@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2ee77799-2aef-45a3-84b5-3b12a7b0d0e1" name="Changes" comment="" />
+    <list default="true" id="2ee77799-2aef-45a3-84b5-3b12a7b0d0e1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../ForwardList/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ForwardList/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReverserShoppingMarkAndJavaStack/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ReverserShoppingMarkAndJavaStack/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TArrayStack/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TArrayStack/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TQueues04_14/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TQueues04_14/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TQueues04_14/out/production/TQueues04_14/lib/TQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/../TQueues04_14/out/production/TQueues04_14/lib/TQueue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TQueues04_14/src/lib/TQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TQueues04_14/src/lib/TQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../list/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../list/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,13 +37,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Stack03_04" />
-    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/CodeProjects/DataStructures/DataStructuresJava/TQueues04_14",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -65,6 +73,7 @@
       <workItem from="1678393265083" duration="8000" />
       <workItem from="1678394285248" duration="1331000" />
       <workItem from="1678550341283" duration="19000" />
+      <workItem from="1683025443402" duration="12000" />
     </task>
     <servers />
   </component>

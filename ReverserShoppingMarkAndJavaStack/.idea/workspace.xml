@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c1c3375-c5f2-4afc-80de-361b530b467b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Stack/src/TStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ForwardList/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ForwardList/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TQueues04_14/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TQueues04_14/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TQueues04_14/out/production/TQueues04_14/lib/TQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/../TQueues04_14/out/production/TQueues04_14/lib/TQueue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TQueues04_14/src/lib/TQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TQueues04_14/src/lib/TQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../list/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../list/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,12 +42,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/CodeProjects/DataStructures/DataStructuresJava/TQueues04_14",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -70,6 +75,7 @@
       <workItem from="1678130848598" duration="1674000" />
       <workItem from="1678220685121" duration="2537000" />
       <workItem from="1678281104868" duration="3293000" />
+      <workItem from="1683025340652" duration="31000" />
     </task>
     <servers />
   </component>

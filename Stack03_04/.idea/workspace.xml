@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="860f6282-da1a-4f2e-bdec-6a5278d2ca0b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../ArrayStackT03_17/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ArrayStackT03_17/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ArrayStackT03_17/TArrayStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ArrayStackT03_17/TArrayStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BracketsValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BracketsValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ForwardList/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ForwardList/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReverserShoppingMarkAndJavaStack/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ReverserShoppingMarkAndJavaStack/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StackExercise/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../StackExercise/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TArrayStack/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TArrayStack/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TQueues04_14/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TQueues04_14/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TQueues04_14/out/production/TQueues04_14/lib/TQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/../TQueues04_14/out/production/TQueues04_14/lib/TQueue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TQueues04_14/src/lib/TQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TQueues04_14/src/lib/TQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../list/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../list/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,17 +41,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/CodeProjects/DataStructures/DataStructuresJava/ArrayStack03_17&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/CodeProjects/DataStructures/DataStructuresJava/Stack03_04",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\CodeProjects\DataStructures\DataStructuresJava\Stack03_04\src" />
@@ -144,6 +148,7 @@
       <workItem from="1679843657401" duration="532000" />
       <workItem from="1679922676303" duration="50000" />
       <workItem from="1679923293193" duration="298000" />
+      <workItem from="1683027147700" duration="54000" />
     </task>
     <servers />
   </component>

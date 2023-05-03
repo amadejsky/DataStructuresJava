@@ -79,7 +79,54 @@ public class TQueue<E> implements InterQueueIterable<E> {
 
     @Override
     public int size() {
-        return 0;
+        int count = 0;
+        TQueueNode<E> current = head;
+        while (current != null) {
+            count++;
+            current = current.getPtr();
+        }
+        return count;
+    }
+
+    public boolean switchHeadTail() {
+        if (head == null || head == tail) {
+            return false;
+        } else {
+            TQueueNode<E> prev = null;
+            TQueueNode<E> curr = head;
+            while (curr.getPtr() != null) {
+                prev = curr;
+                curr = curr.getPtr();
+            }
+            // głowa z ogonem
+            tail.setPtr(head.getPtr());
+            head.setPtr(null);
+            prev.setPtr(head);
+            //  zmienne head i tail
+            TQueueNode<E> temp = head;
+            head = tail;
+            tail = temp;
+            return true;
+        }
+    }
+    public void join(E[] elements) {
+        for (E element : elements) {
+            put(element);
+        }
+    }
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("[");
+        TQueueIterator<E> iterator = new TQueueIterator<>(head);
+        while (iterator.hasNext()) {
+            sb.append(iterator.next().toString());
+            if (iterator.hasNext()) {
+                sb.append(", ");
+            }
+        }
+        sb.append("]");
+        return sb.toString();
     }
 
     @Override

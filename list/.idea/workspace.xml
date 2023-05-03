@@ -5,15 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e3555bdc-f219-4bf1-835f-cc1ca36365bf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Que/QUE/src/Tasks/Zad1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src (1)/src/str/DataInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src (1)/src/str/Exercise04.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src (1)/src/str/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ArrayStackT03_17/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ArrayStackT03_17/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ArrayStackT03_17/out/production/ArrayStackT03_17/inter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ArrayStackT03_17/out/production/ArrayStackT03_17/inter/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ArrayStackT03_17/out/production/ArrayStackT03_17/inter/RPNGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ArrayStackT03_17/out/production/ArrayStackT03_17/inter/RPNGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ArrayStackT03_17/out/production/ArrayStackT03_17/inter/TArrayStack.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ArrayStackT03_17/out/production/ArrayStackT03_17/inter/TArrayStack.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src (1)/src/str/Exercise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src (1)/src/str/Exercise.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,18 +30,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/CodeProjects/JavaProjects/Term4Java/SOLID04_18",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -66,6 +59,8 @@
       <workItem from="1681281163919" duration="15000" />
       <workItem from="1681474207652" duration="2701000" />
       <workItem from="1681479430204" duration="43000" />
+      <workItem from="1681737399956" duration="2842000" />
+      <workItem from="1682151313220" duration="92000" />
     </task>
     <servers />
   </component>
