@@ -6,15 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="fae5b8d3-5165-4bb2-8763-461fd9b0b702" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.." beforeDir="false" afterPath="$PROJECT_DIR$/.." afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ForwardList/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ForwardList/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReverserShoppingMarkAndJavaStack/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ReverserShoppingMarkAndJavaStack/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Stack03_04/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Stack03_04/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StackExercise/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../StackExercise/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TArrayStack/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TArrayStack/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TQueues04_14/lib/TQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TQueues04_14/lib/TQueue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/TQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/TQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../list/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../list/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,6 +112,8 @@
       <workItem from="1683027127348" duration="17000" />
       <workItem from="1683027204460" duration="4000" />
       <workItem from="1683029551547" duration="981000" />
+      <workItem from="1683300791605" duration="128000" />
+      <workItem from="1683300936063" duration="34000" />
     </task>
     <servers />
   </component>
