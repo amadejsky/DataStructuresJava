@@ -1,0 +1,33 @@
+// 3a
+
+public int find(E element) {
+    for (int i = 0; i < array.size(); i++) {
+        if (array.get(i).equals(element)) {
+            return i;
+        }
+    }
+    return -1;
+}
+
+// 5
+package lib;
+
+public class TPriorityQueue<E extends Comparable<E>> {
+    private THeapMax<E> heap;
+
+    public TPriorityQueue() {
+        heap = new THeapMax<>();
+    }
+
+    public void enqueue(E element) {
+        heap.insert(element);
+    }
+
+    public E dequeue() {
+        return heap.delete();
+    }
+
+    public int size() {
+        return heap.size();
+    }
+}

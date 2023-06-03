@@ -1,0 +1,30 @@
+ public int deepLevel(E item) {
+        for (int i = 0; i < memoryStack.length; i++) {
+            if (memoryStack[i].equals(item)) {
+                System.out.println("Level of element in the stack is: ");
+                return i;
+            }
+        }
+        return -1;
+        //int deepLevel(item)sprawdzającą ja głęboko na stosie jest dostępny szukany elementitem.
+    }
+
+    public boolean isFull() {
+        return size == maxSize;
+    }
+
+    public String printStack() {
+        //String printStack()pozwalającą na wyświetlenie stosu w postacikolejnych elementów tablicy. Przykładowo jeżeli do stosu przekażemy napisy: „ene”, „due”, „rike”, „fake”, to metoda produkuje łańcuch znaków postaci:Tab[3]=fake <-topTab[2]=rikeTab[1]=dueTab[0]=ene
+        StringBuilder sb = new StringBuilder();
+        if (this.size == 0) {
+            return "[EMPTY]";
+        } else {
+            for (int i = size; i >= 0; i--) {
+                sb.append("Tab" + "[" + i + "] " + memoryStack[i] + "\n");
+            }
+            sb.append("<---top");
+        }
+
+
+        return sb.toString();
+    }

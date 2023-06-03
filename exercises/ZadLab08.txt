@@ -1,0 +1,206 @@
+3)Wyswietlenie
+
+wyswietl_informacje(Stol) :-
+    osoba(Imie, Zawod, Danie, Napoj, Stol),
+    format("Imię: ~w~nZawód: ~w~nDanie: ~w~nNapój: ~w~nStolik: ~w~n~n", [Imie, Zawod, Danie, Napoj, Stol]),
+    fail.
+
+wyswietl_informacje(_).
+
+
+2)Pytanie
+
+osoba(Zdjecia, Imie) :-
+    zbiera(Imie, Zdjecia),
+    siedzacy_golebie(Zdjecia).
+
+zbiera(jan, [zdjecie1, zdjecie2, zdjecie3]).
+zbiera(anna, [zdjecie4, zdjecie5]).
+zbiera(marek, [zdjecie6, zdjecie7, zdjecie8, zdjecie9]).
+siedzacy_golebie([zdjecie2, zdjecie4, zdjecie6, zdjecie8]).
+
+?- osoba(Zdjecia, Imie).
+
+
+
+1)Unifikacja 
+
+
+% Fakty dotyczące rozmieszczenia osób przy stolikach
+rozmieszczenie(jacek, _, _, _, _, _, _, _, _).
+rozmieszczenie(lena, _, _, _, _, _, _, _, _).
+rozmieszczenie(marek, _, _, _, _, _, _, _, _).
+rozmieszczenie(krzysztof, _, _, _, _, _, _, _, _).
+rozmieszczenie(monika, _, _, _, _, _, _, _, _).
+rozmieszczenie(rafał, _, _, _, _, _, _, _, _).
+rozmieszczenie(tomasz, _, _, _, _, _, _, _, _).
+rozmieszczenie(masażysta, _, _, _, _, _, _, _, _).
+rozmieszczenie(krystyna, _, _, _, _, _, _, _, _).
+rozmieszczenie(iwona, _, _, _, _, _, _, _, _).
+rozmieszczenie(oktawia, _, _, _, _, _, _, _, _).
+rozmieszczenie(izajasz, _, _, _, _, _, _, _, _).
+rozmieszczenie(janina, _, _, _, _, _, _, _, _).
+rozmieszczenie(hydraulik, _, _, _, _, _, _, _, _).
+rozmieszczenie(dermatolog, _, _, _, _, _, _, _, _).
+rozmieszczenie(kosmetyczka, _, _, _, _, _, _, _, _).
+rozmieszczenie(programista, _, _, _, _, _, _, _, _).
+rozmieszczenie(florystka, _, _, _, _, _, _, _, _).
+rozmieszczenie(kierowca, _, _, _, _, _, _, _, _).
+rozmieszczenie(komornik, _, _, _, _, _, _, _, _).
+rozmieszczenie(pilot, _, _, _, _, _, _, _, _).
+
+% Reguła unifikacji informacji o uczestnikach
+unifikacja :-
+    rozmieszczenie(jacek, _, _, _, _, _, _, _, _),                     % 1
+    rozmieszczenie(lena, _, _, _, _, _, _, _, _),                      % 2
+    rozmieszczenie(marek, _, _, _, _, _, _, _, _),                     % 3
+    rozmieszczenie(krzysztof, _, _, _, _, _, _, _, _),                 % 4
+    rozmieszczenie(monika, kierowca, _, _, _, _, _, _, _),             % 5
+    rozmieszczenie(rafał, _, _, golonka, _, _, _, _, _),               % 7
+    rozmieszczenie(tomasz, komornik, _, _, _, _, _, _, _),             % 9
+    rozmieszczenie(masażysta, _, _, _, _, _, _, _, _),                 % 10
+    rozmieszczenie(krystyna, _, _, _, _, _, _, _, _),                  % 14
+    rozmieszczenie(iwona, _, _, _, _, _, _, _, schab_w_musie_leśnym),  % 25
+    rozmieszczenie(oktawia, programista, _, _, _, _, _, _, _),         % 32
+    rozmieszczenie(izajasz, _, _, _, _, _, _, _, _),                   % 51
+    rozmieszczenie(janina, pielęgniarka, _, _, _, _, _, _, _),         % 42
+    rozmieszczenie(hydraulik, _, _, _, _, _, _, _, _),                 % 44
+    rozmieszczenie(dermatolog, _, _, _, _, _, _, _, _),                % 43
+    rozmieszczenie(kosmetyczka, _, _, _, _, _, _, _, _),               % 38
+    rozmieszczenie(programista, _, _, _, _, _, _, _, jeż_mięsny),     % 16
+    rozmieszczenie(florystka, _, _, _, _, _, _, _, _),                 % 51
+    rozmieszczenie(kierowca, _, węgorz_smazony, _, _, _, _, _, _),     % 5
+    rozmieszczenie(komornik, _, _, _, _, _, _, _, _),                  % 31
+    rozmieszczenie(pilot, _, _, _, _, _, _, _, _),                     % 13
+
+    % Warunki dotyczące unifikacji
+    rozmieszczenie(marek, _, _, _, _, _, _, _, _),                     % 3
+    rozmieszczenie(krzysztof, _, _, _, _, _, _, _, _),                 % 4
+    rozmieszczenie(monika, _, węgorz_smazony, _, _, _, _, _, _),       % 5
+    rozmieszczenie(tomasz, _, _, _, _, _, _, _, _),                    % 9
+    rozmieszczenie(masażysta, _, _, _, _, _, _, _, _),                 % 10
+    rozmieszczenie(janina, _, _, _, _, _, _, _, _),                    % 22
+    rozmieszczenie(krystyna, _, _, _, _, _, _, _, _),                  % 14
+    rozmieszczenie(oktawia, _, _, _, _, _, _, _, _),                   % 19
+    rozmieszczenie(izajasz, _, _, _, _, _, _, _, _),                   % 20
+    rozmieszczenie(hydraulik, _, _, _, _, _, _, _, _),                 % 28
+    rozmieszczenie(dermatolog, _, _, _, _, _, _, _, _),                % 27
+    rozmieszczenie(kosmetyczka, _, _, _, _, _, _, _, _),               % 26
+    rozmieszczenie(programista, _, _, _, _, _, _, _, _),               % 16
+    rozmieszczenie(florystka, _, _, _, _, _, _, _, _),                 % 51
+    rozmieszczenie(kierowca, _, _, _, _, _, _, _, _),                  % 5
+    rozmieszczenie(komornik, _, _, _, _, _, _, _, _),                  % 31
+    rozmieszczenie(pilot, _, _, _, _, _, _, _, _)                      % 13
+    .
+
+% Zapytania
+imię_ze_zdjęciami_golebi(Imię) :-
+    rozmieszczenie(Imię, _, _, _, _, _, _, _, _),
+    rozmieszczenie(_, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _], 'invert': False},
+    {'type': 'UNSTACK', 'parameters': [7], 'results': [6, 5, 4, 3, 2, 1, 0]},
+    {'line': '102=25', 'args': [17], 'kwargs': {'delay': 0}, 'stack': [17, 25], 'invert': True},
+    {'line': '106=push(14)', 'args': [17], 'kwargs': {}, 'stack': [14, 17, 25], 'invert': True},
+    {'line': '110=push(24)', 'args': [14], 'kwargs': {}, 'stack': [24, 14, 17, 25], 'invert': True},
+    {'line': '114=or()', 'args': [24], 'kwargs': {}, 'stack': [38, 17, 25], 'invert': True},
+    {'line': '118=xor(19)', 'args': [38], 'kwargs': {}, 'stack': [55, 17, 25], 'invert': True},
+    {'line': '122=and(20)', 'args': [55], 'kwargs': {}, 'stack': [20, 17, 25], 'invert': True},
+    {'line': '126=xor(21)', 'args': [20], 'kwargs': {}, 'stack': [37, 17, 25], 'invert': True},
+    {'line': '130=or(22)', 'args': [37], 'kwargs': {}, 'stack': [63, 17, 25], 'invert': True},
+    {'line': '134=xor(23)', 'args': [63], 'kwargs': {}, 'stack': [40, 17, 25], 'invert': True},
+    {'line': '138=and(24)', 'args': [40], 'kwargs': {}, 'stack': [16, 17, 25], 'invert': True},
+    {'line': '142=and(25)', 'args': [16], 'kwargs': {}, 'stack': [24, 17, 25], 'invert': True},
+    {'line': '146=and(26)', 'args': [24], 'kwargs': {}, 'stack': [24, 17, 25], 'invert': True},
+    {'line': '150=and(27)', 'args': [24], 'kwargs': {}, 'stack': [24, 17, 25], 'invert': True},
+    {'line': '154=and(28)', 'args': [24], 'kwargs': {}, 'stack': [24, 17, 25], 'invert': True},
+    {'line': '158=or(29)', 'args': [24], 'kwargs': {}, 'stack': [24, 17, 25], 'invert': True},
+    {'line': '162=and(30)', 'args': [24], 'kwargs': {}, 'stack': [24, 17, 25], 'invert': True},
+    {'line': '166=and(31)', 'args': [24], 'kwargs': {}, 'stack': [24, 17, 25], 'invert': True},
+    {'line': '170=and(32)', 'args': [24], 'kwargs': {}, 'stack': [24, 17, 25], 'invert': True},
+    {'line': '174=or(33)', 'args': [24], 'kwargs': {}, 'stack': [24, 17, 25], 'invert': True},
+    {'line': '178=xor(34)', 'args': [24], 'kwargs': {}, 'stack': [8, 17, 25], 'invert': True},
+    {'line': '182=and(35)', 'args': [8], 'kwargs': {}, 'stack': [0, 17, 25], 'invert': True},
+    {'line': '186=and(36)', 'args': [0], 'kwargs': {}, 'stack': [0, 17, 25], 'invert': True},
+    {'line': '190=xor(37)', 'args': [0], 'kwargs': {}, 'stack': [17, 25], 'invert': True},
+    {'line': '194=or(38)', 'args': [17], 'kwargs': {}, 'stack': [17, 25], 'invert': True},
+    {'line': '198=xor(39)', 'args': [17], 'kwargs': {}, 'stack': [8, 25], 'invert': True},
+    {'line': '202=and(40)', 'args': [8], 'kwargs': {}, 'stack': [8, 25], 'invert': True},
+    {'line': '206=xor(41)', 'args': [8], 'kwargs': {}, 'stack': [17, 25], 'invert': True},
+    {'line': '210=and(42)', 'args': [17], 'kwargs': {}, 'stack': [17, 25], 'invert': True},
+    {'line': '214=and(43)', 'args': [17], 'kwargs': {}, 'stack': [17, 25], 'invert': True},
+    {'line': '218=or(44)', 'args': [17], 'kwargs': {}, 'stack': [17, 25], 'invert': True},
+    {'line': '222=and(45)', 'args': [17], 'kwargs': {}, 'stack': [17, 25], 'invert': True},
+    {'line': '226=and(46)', 'args': [17], 'kwargs': {}, 'stack': [17, 25], 'invert': True},
+    {'line': '230=xor(47)', 'args': [17], 'kwargs': {}, 'stack': [8, 25], 'invert': True},
+    {'line': '234=or(48)', 'args': [8], 'kwargs': {}, 'stack': [8, 25], 'invert': True},
+    {'line': '238=xor(49)', 'args': [8], 'kwargs': {}, 'stack': [17, 25], 'invert': True},
+    {'line': '242=and(50)', 'args': [17], 'kwargs': {}, 'stack': [17, 25], 'invert': True},
+    {'line': '246=and(51)', 'args': [17], 'kwargs': {}, 'stack': [17, 25], 'invert': True},
+    {'line': '250=or(52)', 'args': [17], 'kwargs': {}, 'stack': [17, 25], 'invert': True},
+    {'line': '254=xor(53)', 'args': [17], 'kwargs': {}, 'stack': [8, 25], 'invert': True},
+    {'line': '258=or(54)', 'args': [8], 'kwargs': {}, 'stack': [8, 25], 'invert': True},
+    {'line': '262=xor(55)', 'args': [8], 'kwargs': {}, 'stack': [17, 25], 'invert': True},
+    {'line': '266=and(56)', 'args': [17], 'kwargs': {}, 'stack': [17, 25], 'invert': True},
+    {'line': '270=and(57)', 'args': [17], 'kwargs': {}, 'stack': [17, 25], 'invert': True},
+    {'line': '274=or(58)', 'args': [17], 'kwargs': {}, 'stack': [17, 25], 'invert': True},
+    {'line': '278=xor(59)', 'args': [17], 'kwargs': {}, 'stack': [8, 25], 'invert': True},
+    {'line': '282=or(60)', 'args': [8], 'kwargs': {}, 'stack': [8, 25], 'invert': True},
+    {'line': '286=xor(61)', 'args': [8], 'kwargs': {}, 'stack': [17, 25], 'invert': True},
+    {'line': '290=and(62)', 'args': [17], 'kwargs': {}, 'stack': [17, 25], 'invert': True},
+    {'line': '294=and(63)', 'args': [17], 'kwargs': {}, 'stack': [17, 25], 'invert': True},
+    {'line': '298=or(64)', 'args': [17], 'kwargs': {}, 'stack': [17, 25], 'invert': True},
+    {'line': '302=xor(65)', 'args': [17], 'kwargs': {}, 'stack': [8, 25], 'invert': True},
+    {'line': '306=or(66)', 'args': [8], 'kwargs': {}, 'stack': [8, 25], 'invert': True},
+    {'line': '310=xor(67)', 'args': [8], 'kwargs': {}, 'stack': [17, 25], 'invert': True},
+    {'line': '314=and(68)', 'args': [17], 'kwargs': {}, 'stack': [17, 25], 'invert': True},
+    {'line': '318=and(69)', 'args': [17], 'kwargs': {}, 'stack': [17, 25], 'invert': True},
+    {'line': '322=or(70)', 'args': [17], 'kwargs': {}, 'stack': [17, 25], 'invert': True},
+    {'line': '326=xor(71)', 'args': [17], 'kwargs': {}, 'stack': [8, 25], 'invert': True},
+    {'line': '330=or(72)', 'args': [8], 'kwargs': {}, 'stack': [8, 25], 'invert': True},
+    {'line': '334=xor(73)', 'args': [8], 'kwargs': {}, 'stack': [17, 25], 'invert': True},
+    {'line': '338=and(74)', 'args': [17], 'kwargs': {}, 'stack': [17, 25], 'invert': True},
+    {'line': '342=and(75)', 'args': [17], 'kwargs': {}, 'stack': [17, 25], 'invert': True},
+    {'line': '346=or(76)', 'args': [17], 'kwargs': {}, 'stack': [17, 25], 'invert': True},
+    {'line': '350=xor(77)', 'args': [17], 'kwargs': {}, 'stack': [8, 25], 'invert': True},
+    {'line': '354=or(78)', 'args': [8], 'kwargs': {}, 'stack': [8, 25], 'invert': True},
+    {'line': '358=xor(79)', 'args': [8], 'kwargs': {}, 'stack': [17, 25], 'invert': True},
+    {'line': '362=and(80)', 'args': [17], 'kwargs': {}, 'stack': [17, 25], 'invert': True},
+    {'line': '366=and(81)', 'args': [17], 'kwargs': {}, 'stack': [17, 25], 'invert': True},
+    {'line': '370=or(82)', 'args': [17], 'kwargs': {}, 'stack': [17, 25], 'invert': True},
+    {'line': '374=xor(83)', 'args': [17], 'kwargs': {}, 'stack': [8, 25], 'invert': True},
+    {'line': '378=or(84)', 'args': [8], 'kwargs': {}, 'stack': [8, 25], 'invert': True},
+    {'line': '382=xor(85)', 'args': [8], 'kwargs': {}, 'stack': [17, 25], 'invert': True},
+    {'line': '386=and(86)', 'args': [17], 'kwargs': {}, 'stack': [17, 25], 'invert': True},
+    {'line': '390=and(87)', 'args': [17], 'kwargs': {}, 'stack': [17, 25], 'invert': True},
+    {'line': '394=or(88)', 'args': [17], 'kwargs': {}, 'stack': [17, 25], 'invert': True},
+    {'line': '398=xor(89)', 'args': [17], 'kwargs': {}, 'stack': [8, 25], 'invert': True},
+    {'line': '402=or(90)', 'args': [8], 'kwargs': {}, 'stack': [8, 25], 'invert': True},
+    {'line': '406=xor(91)', 'args': [8], 'kwargs': {}, 'stack': [17, 25], 'invert': True},
+    {'line': '410=and(92)', 'args': [17], 'kwargs': {}, 'stack': [17, 25], 'invert': True},
+    {'line': '414=and(93)', 'args': [17], 'kwargs': {}, 'stack': [17, 25], 'invert': True},
+    {'line': '418=or(94)', 'args': [17], 'kwargs': {}, 'stack': [17, 25], 'invert': True},
+    {'line': '422=xor(95)', 'args': [17], 'kwargs': {}, 'stack': [8, 25], 'invert': True},
+    {'line': '426=or(96)', 'args': [8], 'kwargs': {}, 'stack': [8, 25], 'invert': True},
+    {'line': '430=xor(97)', 'args': [8], 'kwargs': {}, 'stack': [17, 25], 'invert': True},
+    {'line': '434=and(98)', 'args': [17], 'kwargs': {}, 'stack': [17, 25], 'invert': True},
+    {'line': '438=and(99)', 'args': [17], 'kwargs': {}, 'stack': [17, 25], 'invert': True},
+    {'line': '442=or(100)', 'args': [17], 'kwargs': {}, 'stack': [17, 25], 'invert': True},
+    {'line': '446=xor(101)', 'args': [17], 'kwargs': {}, 'stack': [8, 25], 'invert': True},
+    {'line': '450=or(102)', 'args': [8], 'kwargs': {}, 'stack': [8, 25], 'invert': True},
+    {'line': '454=xor(103)', 'args': [8], 'kwargs': {}, 'stack': [17, 25], 'invert': True},
+    {'line': '458=and(104)', 'args': [17], 'kwargs': {}, 'stack': [17, 25], 'invert': True},
+    {'line': '462=and(105)', 'args': [17], 'kwargs': {}, 'stack': [17, 25], 'invert': True},
+    {'line': '466=or(106)', 'args': [17], 'kwargs': {}, 'stack': [17, 25], 'invert': True},
+    {'line': '470=xor(107)', 'args': [17], 'kwargs': {}, 'stack': [8, 25], 'invert': True},
+    {'line': '474=or(108)', 'args': [8], 'kwargs': {}, 'stack': [8, 25], 'invert': True},
+    {'line': '478=xor(109)', 'args': [8], 'kwargs': {}, 'stack': [17, 25], 'invert': True},
+    {'line': '482=and(110)', 'args': [17], 'kwargs': {}, 'stack': [17, 25], 'invert': True},
+    {'line': '486=and(111)', 'args': [17], 'kwargs': {}, 'stack': [17, 25], 'invert': True},
+    {'line': '490=or(112)', 'args': [17], 'kwargs': {}, 'stack': [17, 25], 'invert': True},
+    {'line': '494=xor(113)', 'args': [17], 'kwargs': {}, 'stack': [8, 25], 'invert': True},
+    {'line': '498=or(114)', 'args': [8], 'kwargs': {}, 'stack': [8, 25], 'invert': True},
+    {'line': '502=xor(115)', 'args': [8], 'kwargs': {}, 'stack': [17, 25], 'invert': True},
+    {'line': '506=and(116)', 'args': [17], 'kwargs': {}, 'stack': [17, 25], 'invert': True},
+    {'line': '510=and(117)', 'args': [17], 'kwargs': {}, 'stack': [17, 25], 'invert': True},
+    {'line': '514=or(118)', 'args': [17], 'kwargs': {}, 'stack': [17, 25], 'invert': True},
+    {'line': '518=xor(119)', 'args': [17], 'kwargs': {}, 'stack': [8, 25], 'invert': True},
+    {'line': '522=or(120)', 'args': [8], 'kwargs': {}, '
