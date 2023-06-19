@@ -1,0 +1,167 @@
+public class TreeAVL<E extends Comparable<E>> {
+    private TreeBSTNode<E> root;
+
+    private class TreeBSTNode<E extends Comparable<E>> {
+        E data;
+        TreeBSTNode<E> left, right;
+        int height;
+
+        TreeBSTNode(E data) {
+            this.data = data;
+            height = 1;
+        }
+    }
+
+
+    public void insert(E data) {
+        root = insert(root, data);
+    }
+
+
+    public void delete(E data) {
+        root = delete(root, data);
+    }
+
+    private TreeBSTNode<E> insert(TreeBSTNode<E> node, E data) {
+        if (node == null) {
+            return new TreeBSTNode<>(data);
+        } else if (data.compareTo(node.data) < 0) {
+            node.left = insert(node.left, data);
+        } else if (data.compareTo(node.data) > 0) {
+            node.right = insert(node.right, data);
+        } else {
+            return node;
+        }
+
+
+
+        node.height = 1 + Math.max(height(node.left), height(node.right));
+
+        int balance = balance(node);
+
+        if (balance > 1 && data.compareTo(node.left.data) < 0) {
+            return rightRotate(node);
+        }
+
+        if (balance < -1 && data.compareTo(node.right.data) > 0) {
+            return leftRotate(node);
+        }
+
+        if (balance > 1 && data.compareTo(node.left.data) > 0) {
+            node.left = leftRotate(node.left);
+            return rightRotate(node);
+        }
+
+        if (balance < -1 && data.compareTo(node.right.data) < 0) {
+            node.right = rightRotate(node.right);
+            return leftRotate(node);
+        }
+
+        return node;
+    }
+
+    private TreeBSTNode<E> delete(TreeBSTNode<E> root, E data) {
+        if (root == null) {
+            return root;
+        }
+        if (data.compareTo(root.data) < 0) {
+            root.left = delete(root.left, data);
+        } else if (data.compareTo(root.data) > 0) {
+            root.right = delete(root.right, data);
+        } else {
+            if ((root.left == null) || (root.right == null)) {
+                TreeBSTNode<E> temp = (root.left == null) ? root.right : root.left;
+                if (temp == null) {
+                    root = null;
+                } else {
+                    root = temp;
+                }
+            } else {
+
+                TreeBSTNode<E> temp = minValueNode(root.right);
+                root.data = temp.data;
+                root.right = delete(root.right, temp.data);
+            }
+        }
+
+        if (root == null) {
+            return root;
+        }
+
+        root.height = 1 + Math.max(height(root.left), height(root.right));
+
+        int balance = balance(root);
+
+        if (balance > 1 && balance(root.left) >= 0) {
+            return rightRotate(root);
+        }
+
+        if (balance < -1 && balance(root.right) <= 0) {
+            return leftRotate(root);
+        }
+
+        if (balance > 1 && balance(root.left) < 0) {
+            root.left = leftRotate(root.left);
+            return rightRotate(root);
+        }
+        
+        if (balance < -1 && balance(root.right) > 0) {
+            root.right = rightRotate(root.right);
+            return leftRotate(root);
+        }
+
+        return root;
+    }
+
+    private TreeBSTNode<E> minValueNode(TreeBSTNode<E> node) {
+        TreeBSTNode<E> current = node;
+        while (current.left != null) {
+            current = current.left;
+        }
+        return current;
+    }
+
+
+    private int height(TreeBSTNode<E> node) {
+        if (node == null) {
+            return 0;
+        }
+        return node.height;
+    }
+
+    private int balance(TreeBSTNode<E> node) {
+        if (node == null) {
+            return 0;
+        }
+        return height(node.left) - height(node.right);
+    }
+
+    private TreeBSTNode<E> leftRotate(TreeBSTNode<E> x) {
+        TreeBSTNode<E> y = x.right;
+        TreeBSTNode<E> T2 = y.left;
+
+        y.left = x;
+        x.right = T2;
+
+        x.height = Math.max(height(x.left), height(x.right)) + 1;
+        y.height = Math.max(height(y.left), height(y.right)) + 1;
+
+        return y;
+    }
+	
+	 private TreeBSTNode<E> rightRotate(TreeBSTNode<E> y) {
+        TreeBSTNode<E> x = y.left;
+        TreeBSTNode<E> T2 = x.right;
+
+        x.right = y;
+        y.left = T2;
+
+        y.height = Math.max(height(y.left), height(y.right)) + 1;
+        x.height = Math.max(height(x.left), height(x.right)) + 1;
+
+        return x;
+    }
+
+
+
+}
